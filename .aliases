@@ -1,0 +1,13 @@
+alias reload=". ~/.zshrc && echo 'ZSH config reloaded from ~/.zshrc'"
+alias zshconfig="sublime ~/.zshrc"
+alias ohmyzsh="sublime ~/.oh-my-zsh"
+alias ..='cd ..'
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias la='ls -a -l'
+alias ll='ls -l'
+alias 'ps?'='ps ax | grep'
+alias updatelocate='sudo /usr/libexec/locate.updatedb'
+alias pla='pear list -a'
+alias git='hub'

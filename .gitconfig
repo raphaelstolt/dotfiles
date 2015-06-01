@@ -1,0 +1,36 @@
+[user]
+    name = Name Surname
+    email = name.surname@gmail.com
+[color]
+    ui = auto
+    diff = auto
+    status = auto
+    branch = auto
+    interactive = auto
+[alias]
+    df = diff
+    ci = commit
+    co = checkout
+    st = status
+    br = branch
+    branches = branch -a --color -v
+    # Show the diff between the latest commit and the current state
+    d = !"git diff-index --quiet HEAD -- || clear; git diff --patch-with-stat"
+    # `git di $number` shows the diff between the state `$number` revisions ago and the current state
+    di = !"d() { git diff --patch-with-stat HEAD~$1; }; git diff-index --quiet HEAD -- || clear; d"
+    amend = commit --amend -C HEAD
+    packdiff = diff --name-only --diff-filter=RAMC
+    ln = log --oneline -n
+    pl = log --pretty='format:%C(3)[%h] %Cgreen%an%Creset%n %cd %s %Cred%d%Creset' --graph
+    sshow = "!f() { git stash show stash^{/$*} -p; }; f"
+    sapply = "!f() { git stash apply stash^{/$*}; }; f"
+[core]
+    excludesfile = /Users/<username>/.gitignore
+    whitespace = cr-at-eol
+[filter "media"]
+    clean = git-media-clean %f
+    smudge = git-media-smudge %f
+[filter "hawser"]
+    clean = git hawser clean %f
+    smudge = git hawser smudge %f
+    required = true
