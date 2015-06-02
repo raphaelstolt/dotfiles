@@ -4,6 +4,7 @@
 [color]
     ui = auto
     diff = auto
+    log = auto
     status = auto
     branch = auto
     interactive = auto
@@ -14,6 +15,7 @@
     st = status
     br = branch
     branches = branch -a --color -v
+    alias.up = push origin
     # Show the diff between the latest commit and the current state
     d = !"git diff-index --quiet HEAD -- || clear; git diff --patch-with-stat"
     # `git di $number` shows the diff between the state `$number` revisions ago and the current state

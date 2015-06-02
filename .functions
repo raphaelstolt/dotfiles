@@ -1,3 +1,9 @@
+# Remove a direcory and its files
+function rd() {
+    rm -rf "$@"
+}
+
+# Create a direcory and change into it
 function md () {
   mkdir -p "$@" && cd "$@"
 }
@@ -52,6 +58,11 @@ function ga() {
 }
 
 # Checkout master by default
-function gc() {
+function gcm() {
   git checkout "${@:-master}";
+}
+
+# Git commit shortcut
+function gc() {
+  git commit -m "$*"
 }

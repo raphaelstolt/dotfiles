@@ -10,6 +10,7 @@ alias ll="ls -l"
 alias "ps?"="ps ax | grep"
 alias updatelocate="sudo /usr/libexec/locate.updatedb"
 alias git="hub"
+alias coup="composer selfupdate"
 
 # Recursively delete `.DS_Store` files
 alias dsstore="find . -name '*.DS_Store' -type f -ls -delete"
