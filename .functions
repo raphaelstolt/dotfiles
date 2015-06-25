@@ -4,8 +4,9 @@ function rd() {
 }
 
 # Create a direcory and change into it
-function md () {
-  mkdir -p "$@" && cd "$@"
+function take() {
+  mkdir -p $1
+  cd $1
 }
 
 function g {
