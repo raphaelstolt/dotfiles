@@ -12,5 +12,8 @@ alias updatelocate="sudo /usr/libexec/locate.updatedb"
 alias git="hub"
 alias coup="composer selfupdate"
 
+# Defuse rm by using trash (https://github.com/sindresorhus/trash) instead
+alias rm="trash"
+
 # Recursively delete `.DS_Store` files
 alias dsstore="find . -name '*.DS_Store' -type f -ls -delete"
