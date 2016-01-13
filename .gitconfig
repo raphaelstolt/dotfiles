@@ -12,9 +12,18 @@
     df = diff
     ci = commit
     co = checkout
+    cob = checkout -b
     st = status
+    stm = status -sb
+    ap = add -p
     br = branch
-    branches = branch -a --color -v
+    brs = branch -a --color -v
+    # Delete a branch only if it has been merged
+    bd  = branch -d
+    # Force delete of a branch
+    bD  = branch -D
+    # Remove all merged branches
+    bdm = "!git branch --merged | grep -v '*' | xargs -n 1 git branch -d"
     alias.up = push origin
     # Show the diff between the latest commit and the current state
     d = !"git diff-index --quiet HEAD -- || clear; git diff --patch-with-stat"
