@@ -35,6 +35,7 @@
     pl = log --pretty='format:%C(3)[%h] %Cgreen%an%Creset%n %cd %s %Cred%d%Creset' --graph
     sshow = "!f() { git stash show stash^{/$*} -p; }; f"
     sapply = "!f() { git stash apply stash^{/$*}; }; f"
+    egc = !"git config --$1 -e"
 [core]
     excludesfile = /Users/<username>/.gitignore
     whitespace = cr-at-eol
