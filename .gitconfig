@@ -36,6 +36,8 @@
     sshow = "!f() { git stash show stash^{/$*} -p; }; f"
     sapply = "!f() { git stash apply stash^{/$*}; }; f"
     egc = !"git config --$1 -e"
+    # git cot <tag>
+    cot = rev-list -n 1
 [core]
     excludesfile = /Users/<username>/.gitignore
     whitespace = cr-at-eol
