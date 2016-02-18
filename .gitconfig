@@ -24,7 +24,7 @@
     bD  = branch -D
     # Remove all merged branches
     bdm = "!git branch --merged | grep -v '*' | xargs -n 1 git branch -d"
-    alias.up = push origin
+    up = push origin
     # Show the diff between the latest commit and the current state
     d = !"git diff-index --quiet HEAD -- || clear; git diff --patch-with-stat"
     # `git di $number` shows the diff between the state `$number` revisions ago and the current state
