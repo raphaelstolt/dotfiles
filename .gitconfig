@@ -38,7 +38,7 @@
     egc = !"git config --$1 -e"
     # git cot <tag>
     cot = rev-list -n 1
-    lastchange 'log -p --follow -n 1'
+    lastchange = 'log -p --follow -n 1'
 [core]
     excludesfile = /Users/<username>/.gitignore
     whitespace = cr-at-eol
