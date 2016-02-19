@@ -11,6 +11,7 @@ alias "ps?"="ps ax | grep"
 alias updatelocate="sudo /usr/libexec/locate.updatedb"
 alias git="hub"
 alias coup="composer selfupdate"
+alias cols="composer run script --list"
 
 # Defuse rm by using trash (https://github.com/sindresorhus/trash) instead
 alias rm="trash"
