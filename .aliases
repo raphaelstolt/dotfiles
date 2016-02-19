@@ -14,7 +14,7 @@ alias coup="composer selfupdate"
 alias cols="composer run script --list"
 
 # Defuse rm by using trash (https://github.com/sindresorhus/trash) instead
-alias rm="trash"
+alias empty-bin="trash"
 
 # Recursively delete `.DS_Store` files
 alias dsstore="find . -name '*.DS_Store' -type f -ls -delete"
