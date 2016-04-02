@@ -9,6 +9,7 @@
     branch = auto
     interactive = auto
 [alias]
+    pl = pull —rebase
     df = diff
     ci = commit
     co = checkout
