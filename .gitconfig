@@ -32,6 +32,7 @@
     # `git di $number` shows the diff between the state `$number` revisions ago and the current state
     di = !"d() { git diff --patch-with-stat HEAD~$1; }; git diff-index --quiet HEAD -- || clear; d"
     amend = commit --amend -C HEAD
+    commend = commit --amend --no-edit
     packdiff = diff --name-only --diff-filter=RAMC
     ln = log --oneline -n
     pl = log --pretty='format:%C(3)[%h] %Cgreen%an%Creset%n %cd %s %Cred%d%Creset' --graph
