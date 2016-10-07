@@ -48,7 +48,7 @@
     # assumes diff-so-fancy (https://github.com/so-fancy/diff-so-fancy) is installed
     dsf = "!f() { [ -z \"$GIT_PREFIX\" ] || cd \"$GIT_PREFIX\" && git diff --color \"$@\" | diff-so-fancy  | less --tabs=4 -RFX; }; f"
     # Show defined aliases
-    alias = "!git config --get-regexp '^alias\\.' | colrm 1 6 | sed 's/ / = /'"
+    ls-alias = "!git config --get-regexp '^alias\\.' | colrm 1 6 | sed 's/ / = /'"
     rebase-branch = !"git rebase --interactive `git merge-base master HEAD`"
     log-standup = !"git log --since yesterday --author $(git config user.email) --pretty=short"
 
