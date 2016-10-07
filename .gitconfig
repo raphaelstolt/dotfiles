@@ -17,7 +17,6 @@
     st = status
     shorty = status --short --branch
     please = push --force-with-lease
-    stm = status -sb
     ap = add -p
     br = branch
     brs = branch -a --color -v
