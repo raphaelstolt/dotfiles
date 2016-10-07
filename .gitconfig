@@ -17,6 +17,7 @@
     st = status
     shorty = status --short --branch
     please = push --force-with-lease
+    it = "!git init && git commit -m \"Initial commit\" --allow-empty"
     ap = add -p
     br = branch
     brs = branch -a --color -v
