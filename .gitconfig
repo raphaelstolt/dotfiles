@@ -57,6 +57,8 @@
 
     wip = !"git add --all; git ls-files --deleted -z | xargs -0 git rm; git commit --message=wip"
     unwip = !"git log -n 1 | grep -q -c wip && git reset HEAD~1"
+
+    sync-fork-master = !"git checkout master; git fetch upstream; git merge upstream/master; git push origin HEAD"
 [core]
     excludesfile = /Users/<username>/.gitignore
     whitespace = cr-at-eol
