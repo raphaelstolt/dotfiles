@@ -59,6 +59,7 @@
     unwip = !"git log -n 1 | grep -q -c wip && git reset HEAD~1"
 
     sync-fork-master = !"git checkout master; git fetch upstream; git merge upstream/master; git push origin HEAD"
+    rfb = !"git add -u && git commend && git push origin HEAD --force-with-lease"
 [core]
     excludesfile = /Users/<username>/.gitignore
     whitespace = cr-at-eol
