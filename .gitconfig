@@ -58,6 +58,10 @@
     wip = !"git add --all; git ls-files --deleted -z | xargs -0 git rm; git commit --message=wip"
     unwip = !"git log -n 1 | grep -q -c wip && git reset HEAD~1"
 
+    # Hashes since commit hash
+    # Usage git hsc <commit-hash>
+    hsc = !"git rev-list $1^..HEAD"
+
     sync-fork-master = !"git checkout master; git fetch upstream; git merge upstream/master; git push origin HEAD"
     rfb = !"git add -u && git commend && git push origin HEAD --force-with-lease"
 [core]
