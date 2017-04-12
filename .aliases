@@ -14,6 +14,9 @@ alias coup="composer selfupdate"
 alias cols="composer run script --list"
 alias cuh="cd $COMPOSER_HOME && composer update && cd"
 
+alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl $@'
+alias mate='open -a /Applications/TextMate.app $@'
+
 # Defuse rm by using trash (https://github.com/sindresorhus/trash) instead
 alias empty-bin="trash"
 
