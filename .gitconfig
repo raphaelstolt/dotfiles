@@ -66,6 +66,8 @@
     rfb = !"git add -u && git commend && git push origin HEAD --force-with-lease"
 
     rbc = !"git add . && git commend"
+
+    tag-history = !"git log --date-order --tags --simplify-by-decoration --pretty=format:'%ai %h %d'"
 [core]
     excludesfile = /Users/<username>/.gitignore
     whitespace = cr-at-eol
