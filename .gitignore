@@ -1,4 +1,9 @@
-/vendor
-/bin
-/coverage-reports
 .DS_Store
+.php_cs.cache
+/build
+/vendor
+/coverage-reports
+/coverage
+/coverage-integration
+phpunit.xml
+TODO.md
