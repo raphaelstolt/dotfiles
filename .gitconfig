@@ -71,7 +71,7 @@
 
     tag-history = !"git log --date-order --tags --simplify-by-decoration --pretty=format:'%ai %h %d'"
 [core]
-    excludesfile = /Users/<username>/.gitignore
+    excludesfile = ~/.gitignore
     whitespace = cr-at-eol
 [filter "media"]
     clean = git-media-clean %f
