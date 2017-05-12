@@ -8,6 +8,8 @@
     status = auto
     branch = auto
     interactive = auto
+[help]
+    autocorrect = 1
 [alias]
     pl = pull —rebase
     df = diff
