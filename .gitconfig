@@ -82,3 +82,5 @@
     required = true
 [credential]
     helper = osxkeychain
+[includeIf "gitdir:~/Work/git-repos/"]
+    path = .oss-gitconfig
