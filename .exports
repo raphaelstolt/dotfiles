@@ -1,3 +1,3 @@
 export HISTCONTROL=erasedups
 export HISTIGNORE="ls:exit:clear"
-export COMPOSER_HOME=$HOME/.composer
+export COMPOSER_HOME=~/.config/composer
