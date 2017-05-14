@@ -25,3 +25,5 @@ alias dsstore="find . -name '*.DS_Store' -type f -ls -delete"
 
 # Update all docker images
 alias udi="docker images | awk 'BEGIN {OFS=\":\";}NR<2 {next}{print \$1, \$2}' | xargs -L1 docker pull"
+
+alias paths="echo $PATH | tr ':' '\n'"
