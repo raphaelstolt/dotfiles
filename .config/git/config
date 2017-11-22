@@ -29,7 +29,7 @@
     bD = branch -D
     pb = push origin HEAD
     # Remove all merged branches
-    bdm = "!git branch --merged | grep -v '*' | xargs -n 1 git branch -d"
+    bdm = "!git branch --merged | grep -v \"master\" | grep -v \"^*\" | xargs git branch -d"
     up = push origin
     # Show the diff between the latest commit and the current state
     d = !"git diff-index --quiet HEAD -- || clear; git diff --patch-with-stat"
