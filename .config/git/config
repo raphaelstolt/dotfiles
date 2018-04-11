@@ -51,6 +51,8 @@
     dsf = "!f() { [ -z \"$GIT_PREFIX\" ] || cd \"$GIT_PREFIX\" && git diff --color \"$@\" | diff-so-fancy  | less --tabs=4 -RFX; }; f"
     # Show defined aliases
     ls-alias = "!git config --get-regexp '^alias\\.' | colrm 1 6 | sed 's/ / = /'"
+    # Show defined aliases alternative
+    ls-a = "!git var -l | grep -e '^alias'"
     rebase-branch = !"git rebase --interactive `git merge-base master HEAD`"
     log-standup = !"git log --since yesterday --author $(git config user.email) --pretty=short"
 
