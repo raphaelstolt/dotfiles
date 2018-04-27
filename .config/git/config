@@ -11,7 +11,7 @@
 [help]
     autocorrect = 1
 [alias]
-    pl = pull —rebase
+    pl = pull --rebase
     df = diff
     ci = commit
     co = checkout
