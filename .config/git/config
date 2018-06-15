@@ -14,6 +14,7 @@
     pl = pull --rebase
     df = diff
     ci = commit
+    rci = "!git commend && git please"
     co = checkout
     cob = checkout -b
     st = status
