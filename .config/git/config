@@ -16,6 +16,7 @@
     ci = commit
     rci = "!git commend && git please"
     co = checkout
+    track = "!git add --intent-to-add"
     cob = checkout -b
     st = status
     shorty = status --short --branch
