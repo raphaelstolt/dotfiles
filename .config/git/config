@@ -88,3 +88,6 @@
     helper = osxkeychain
 [includeIf "gitdir:~/Work/git-repos/"]
     path = .oss-gitconfig
+[i18n]
+    commitencoding = utf-8
+    logoutputencoding = utf-8
