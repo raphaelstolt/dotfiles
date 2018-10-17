@@ -91,3 +91,7 @@
 [i18n]
     commitencoding = utf-8
     logoutputencoding = utf-8
+[pull]
+    rebase = true
+[rebase]
+    autoStash = true
