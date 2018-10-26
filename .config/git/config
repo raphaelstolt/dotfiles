@@ -75,7 +75,7 @@
 
     tag-history = !"git log --date-order --tags --simplify-by-decoration --pretty=format:'%ai %h %d'"
 [core]
-    excludesfile = .gitignore
+    excludesfile = ~/.config/git/.gitignore
     whitespace = cr-at-eol
 [filter "media"]
     clean = git-media-clean %f
@@ -87,7 +87,7 @@
 [credential]
     helper = osxkeychain
 [includeIf "gitdir:~/Work/git-repos/"]
-    path = .oss-gitconfig
+    path = ~/.config/git/.oss-gitconfig
 [i18n]
     commitencoding = utf-8
     logoutputencoding = utf-8
