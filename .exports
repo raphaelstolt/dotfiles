@@ -3,3 +3,4 @@ export HISTIGNORE="ls:exit:clear"
 export COMPOSER_HOME=~/.config/composer
 export YARN_BIN=$(yarn global bin)
 export YARN_GLOBAL_BIN=~/.config/yarn/global/node_modules/.bin
+export HOMEBREW_INSTALL_CLEANUP=1
