@@ -25,6 +25,8 @@
     ap = add -p
     br = branch
     brs = branch -a --color -v
+    # Find branch by grep matches
+    bf = "!git branch | grep"
     # Delete a branch only if it has been merged
     bd = branch -d
     # Force delete of a branch
