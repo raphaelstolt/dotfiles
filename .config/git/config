@@ -97,3 +97,5 @@
     rebase = true
 [rebase]
     autoStash = true
+[branch]
+    autosetupmerge = always
