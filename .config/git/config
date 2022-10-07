@@ -99,3 +99,5 @@
     autoStash = true
 [branch]
     autosetupmerge = always
+[push]
+	autoSetupRemote = true
