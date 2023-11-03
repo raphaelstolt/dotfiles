@@ -11,6 +11,7 @@
 [help]
     autocorrect = 1
 [alias]
+    main-branch = !git symbolic-ref refs/remotes/origin/HEAD | cut -d'/' -f4
     pl = pull --rebase
     df = diff
     ci = commit
