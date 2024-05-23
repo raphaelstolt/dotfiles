@@ -87,6 +87,9 @@
     clean = git hawser clean %f
     smudge = git hawser smudge %f
     required = true
+ [diff "sqlite3"]
+    binary = true
+    textconv = "echo .dump | sqlite3"
 [credential]
     helper = osxkeychain
 [includeIf "gitdir:~/Work/git-repos/"]
