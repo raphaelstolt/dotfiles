@@ -103,5 +103,6 @@
     autoStash = true
 [branch]
     autosetupmerge = always
+    sort = -committerdate
 [push]
 	autoSetupRemote = true
