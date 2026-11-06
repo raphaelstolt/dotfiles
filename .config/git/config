@@ -12,6 +12,7 @@
     autocorrect = 1
 [alias]
     main-branch = !git symbolic-ref refs/remotes/origin/HEAD | cut -d'/' -f4
+    count-files = "!f() { git diff-tree --no-commit-id --name-only -r \"$1\" | wc -l; }; f"
     pl = pull --rebase
     df = diff
     ci = commit
